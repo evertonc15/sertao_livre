@@ -46,7 +46,7 @@ while True:
                 print('\33[1;37mUsuário ou senha inválido. Tente novamente\33[m')
 
         elif opcao_vendedor == 3:
-            break
+            continue
 
     elif opcao == 2:
         mostrar_menu_cliente()
@@ -76,10 +76,12 @@ while True:
                         menu_compra = False
             else:
                 print('\33[1;37mUsuário ou senha inválido. Tente novamente\33[m')
+        elif opcao_cliente == 3:
+            continue
 
 
     elif opcao == 3:
         from art import tprint
         print('\033[1;35mPrograma encerrado!\033[m')
-        tprint('Volte  Sempre')
+        tprint('Volte  Sempre!')
         break
