@@ -1,7 +1,10 @@
-from sertao_livre.menus import *
-from sertao_livre import produto
+from menus import *
+
 import openai
-from sertao_livre.produto import *
+from ProjetoAlgoritmos_parte2.produto import mostrar_produto;
+
+
+from ProjetoAlgoritmos_parte2.menus import mostrar_produto
 
 
 def cadastrar_cliente(clientes):
@@ -146,7 +149,7 @@ def listar_produtos(produtos):
 
 def consultar_descricao(produtos):
     produtoCliente = buscar_produto_cliente(produtos)
-    openai.api_key = 'Sua Chave' #Colar sua chave do Openai aqui
+    openai.api_key = 'Sua Chave' # Colar a sua chave do Openai aqui
 
     # Set the model and prompt
     model_engine = "text-davinci-003"
